@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Ünvanı</th>
+    <th>Adı</th>
+    <th>Soyadı</th>
+  </tr>
+  <% for(var i=0; i<nobetciler.length; i++) {%>
+    <tr>
+      <td><%= nobetciler[i].unvani %></td>
+      <td><%= nobetciler[i].adi %></td>
+      <td><%= nobetciler[i].soyadi %></td>
+    </tr>  
+  <% } %>
+ 
+</table>
+
+</body>
+</html>
